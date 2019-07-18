@@ -16,7 +16,14 @@ master branch contain all branches information.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-#### Branch name - [reactjs_basics](https://github.com/anmolsukki/reactjs_basics/tree/maxmillian)
+#### Branch name - [maxmillian](https://github.com/anmolsukki/reactjs_basics/tree/maxmillian)
+###### Description 
+
+Basics Concept About maxmillian ReactJs tutorial.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+#### Branch name - [other](https://github.com/anmolsukki/reactjs_basics/tree/other)
 ###### Description 
 
 Basics Concept About ReactJs tutorial.
