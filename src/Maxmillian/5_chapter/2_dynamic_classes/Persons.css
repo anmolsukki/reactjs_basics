@@ -1,0 +1,29 @@
+.Card {
+    width: 60%;
+    margin: 16px auto;
+    border: 1px solid #8d8484;
+    box-shadow: 0 2px 3px #a89191;
+    padding: 16px;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.btnstyle {
+    background-color: green;
+    color: wheat;
+    font: inherit;
+    border: 2px solid rgb(34, 180, 124);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btnstyle:hover{
+    background-color: blue;
+}
