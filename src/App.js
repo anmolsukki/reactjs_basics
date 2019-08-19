@@ -33,7 +33,9 @@ import './App.css';
 
 // import First from "./Maxmillian/7_chapter/1_project_structure/Containers/First";
 
-import First from "./Maxmillian/7_chapter/2_add_cockpit/Containers/First";
+// import First from "./Maxmillian/7_chapter/2_add_cockpit/Containers/First";
+
+import First from "./Maxmillian/5_chapter/5_psudo_selector/First";
 
 function App() {
   return (
