@@ -16,6 +16,20 @@ master branch contain all branches information.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+#### Branch name - [max-eject](https://github.com/anmolsukki/reactjs_basics/tree/max-eject)
+###### Description 
+
+max-eject branch about eject react app.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+#### Branch name - [max-redux](https://github.com/anmolsukki/reactjs_basics/tree/max-redux)
+###### Description 
+
+Basic Concept About Redux.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 #### Branch name - [maxmillian](https://github.com/anmolsukki/reactjs_basics/tree/maxmillian)
 ###### Description 
 
