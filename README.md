@@ -30,6 +30,7 @@
 <li>1_styles_dynamically</li>
 <li>2_dynamic_classes</li>
 <li>3_adding_radium</li>
+<li>5_psudo_selector</li>
 </ul>
 
 <b>7_chapter</b>
