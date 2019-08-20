@@ -7,7 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import reducer from './store/reducer';
+// import reducer from './store/reducer';
+
+import reducer from "./store/14_2_state_immutablity";
 
 const store = createStore(reducer);
 

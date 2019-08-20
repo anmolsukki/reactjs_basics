@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import First from "./Maxmillian/14_chapter/1_redux_basics/Containers/First"
+// import First from "./Maxmillian/14_chapter/1_redux_basics/Containers/First";
+
+import First from "./Maxmillian/14_chapter/2_state_immutablity/Containers/First";
 
 function App() {
   return (
