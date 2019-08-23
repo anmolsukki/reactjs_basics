@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import * as actionType from "../../../../store/14_3_combine_reducer/actions"
 import CounterControl from '../Components/CounterControl';
 import CounterOutput from '../Components/CounterOutput';
 
@@ -19,7 +20,7 @@ class First extends Component {
                 <CounterControl label="Subtract 5" clicked={this.props.onSubCounter}  />
                 </div>
                 <hr/>
-                <button onClick = {this.props.onStoreResult}>Store Result</button>
+                <button onClick = {() => this.props.onStoreResult(this.props.ctr)}>Store Result</button>
                 <ul>
                     {this.props.storeResult.map(strResult => (
                         <li key = {strResult.id} onClick={() => this.props.onDeleteResult(strResult.id)}>{strResult.value}</li>
@@ -32,19 +33,19 @@ class First extends Component {
 
 const mapStateToProps = state => {
     return {
-        ctr: state.counter,
-        storeResult: state.result
+        ctr: state.ctrCounter.counter,
+        storeResult: state.resResult.result
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onIncrementCounter: () => dispatch({type: 'INCREMENT'}),
-        onDecrementCounter: () => dispatch({type: 'DECREMENT'}),
-        onAddCounter: () => dispatch({type: 'ADD', val: 5}),
-        onSubCounter: () => dispatch({type: 'SUB', val : 5 }),
-        onStoreResult: () => dispatch({type: "STORE_RESULT"}), 
-        onDeleteResult: (id) => dispatch({type: "DELETE_RESULT", resultElId: id})
+        onIncrementCounter: () => dispatch({type: actionType.INCREMENT}),
+        onDecrementCounter: () => dispatch({type: actionType.DECREMENT}),
+        onAddCounter: () => dispatch({type: actionType.ADD, val: 5}),
+        onSubCounter: () => dispatch({type: actionType.SUB, val : 5 }),
+        onStoreResult: (result) => dispatch({type: actionType.STORE_RESULT,  resultPrint: result}), 
+        onDeleteResult: (id) => dispatch({type: actionType.DELETE_RESULT, resultElId: id})
     };
 };
 

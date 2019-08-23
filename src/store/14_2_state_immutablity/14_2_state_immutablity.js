@@ -31,6 +31,13 @@ switch(action.type) {
             ...state,
             result: state.result.concat({id: new Date(),value: state.counter})
         }
+        case "DELETE_RESULT" :
+            const updatedArray = state.result.filter(results => results.id !== action.resultElId);
+            return {
+                ...state,
+                result: updatedArray
+                
+            }
     default : 
 }
 
