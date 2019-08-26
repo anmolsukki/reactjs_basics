@@ -22,7 +22,7 @@ import { Provider } from 'react-redux';
 // })
 
 //  For 4
-import reducer from "./store/14_4_assignment_solution/reducer"
+import reducer from "./store/14_4_assignment_solution/reducer";
 
 const store = createStore(reducer);
 
