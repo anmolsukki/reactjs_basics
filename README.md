@@ -23,6 +23,13 @@ max-eject branch about eject react app.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+#### Branch name - [max-redux-advance](https://github.com/anmolsukki/reactjs_basics/tree/max-redux-advance)
+###### Description 
+
+Basic Concept About Redux Advance.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 #### Branch name - [max-redux](https://github.com/anmolsukki/reactjs_basics/tree/max-redux)
 ###### Description 
 
