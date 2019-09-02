@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actionType from "../../../../redux/14_adding_middleware/actions/actions";
+import * as actionType from "../../../../redux/15_1_adding_middleware/actions/actions";
 import CounterControl from '../Components/CounterControl';
 import CounterOutput from '../Components/CounterOutput';
 

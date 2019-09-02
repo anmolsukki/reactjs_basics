@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 
 //  For Topic 1
-import counterReducer from "./redux/14_adding_middleware/reducers/counterReducer";
-import resultReducer from "./redux/14_adding_middleware/reducers/resultReducer";
+import counterReducer from "./redux/15_1_adding_middleware/reducers/counterReducer";
+import resultReducer from "./redux/15_1_adding_middleware/reducers/resultReducer";
 const reducer = combineReducers({
     ctrCounter: counterReducer,
     resResult: resultReducer
@@ -24,9 +24,11 @@ const logger = store => {
             return result;
         }
     }
-} 
+}
 
-const store = createStore(reducer, applyMiddleware(logger));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(reducer, composeEnhancers(applyMiddleware(logger)));
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
