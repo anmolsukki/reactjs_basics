@@ -4,31 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
+import store from "./redux/15_2_handling_asynchronous_code/store/store";
 
-//  For Topic 1
-import counterReducer from "./redux/15_1_adding_middleware/reducers/counterReducer";
-import resultReducer from "./redux/15_1_adding_middleware/reducers/resultReducer";
-const reducer = combineReducers({
-    ctrCounter: counterReducer,
-    resResult: resultReducer
-})
-
-const logger = store => {
-    return next => {
-        return action => {
-            console.log("[Middleware] dispatching", action);
-            const result = next(action);
-            console.log("[Middleware] next state", store.getState())
-            return result;
-        }
-    }
-}
-
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-const store = createStore(reducer, composeEnhancers(applyMiddleware(logger)));
+// For run topic 1 go to topic 2 store and uncomment topic 1
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

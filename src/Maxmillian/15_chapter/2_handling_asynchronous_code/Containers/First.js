@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actionCreator from "../../../../redux/15_1_adding_middleware/actions/actions";
+import * as actionCreator from "../../../../redux/15_2_handling_asynchronous_code/actions/actionTypes/index";
 import CounterControl from '../Components/CounterControl';
 import CounterOutput from '../Components/CounterOutput';
 
