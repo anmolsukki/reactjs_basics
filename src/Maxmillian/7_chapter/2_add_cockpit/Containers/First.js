@@ -13,6 +13,11 @@ class First extends React.Component{
            showPerson: false
     }
 
+    static getDerivedStateFromProps (nextProps, prevState) {
+        console.log('[App.js] getDerivedStateFromProps render', prevState)
+        return nextProps
+    }
+
     nameChangeHandler = (event, id) => {
         const personIndex = this.state.person.findIndex(p =>{
             return p.id === id;
