@@ -5,7 +5,15 @@
 <a href="https://raw.githubusercontent.com/anmolsukki/stuff/pics/images/google_pay_barcode.png" ><img src="https://github.com/anmolsukki/stuff/blob/pics/images/google_pay_logo.png" height="18px"></a> &nbsp;
 <a href="https://raw.githubusercontent.com/anmolsukki/stuff/pics/images/paytm_barcode.jpg" ><img src="https://github.com/anmolsukki/stuff/blob/pics/images/paytm_icon.png" height="16px"></a>
 
-------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Get in touch
+
+[![Follow](https://img.shields.io/twitter/url/https/github.com/openebs/openebs.svg?style=social&label=Follow)](https://twitter.com/Anmolsukki) &nbsp;
+<a href="https://www.linkedin.com/in/anmolsukki/" ><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" height="18px"></a>&nbsp;&nbsp;
+<a href="https://www.youtube.com/channel/UCblDw1QEzTOL2CFO_BeV3Sw?view_as=subscriber" ><img src="https://github.com/anmolsukki/stuff/blob/pics/images/subsyou_icon.png" height="23px"></a>
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 ## reactjs_basics
 
@@ -60,9 +68,6 @@ Basics Concept About ReactJs tutorial.
 
 #### Developer Profile
 *   Name - Anmol Singh
-
-[![Follow](https://img.shields.io/twitter/url/https/github.com/openebs/openebs.svg?style=social&label=Follow)](https://twitter.com/Anmolsukki) &nbsp;
-<a href="https://www.linkedin.com/in/anmolsukki/" ><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" height="18px"></a>
 
 <kbd>
 <img src="https://pbs.twimg.com/profile_images/917773516388294657/blG446QN_400x400.jpg" hspace="30" height="150px">
