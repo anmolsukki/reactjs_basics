@@ -66,6 +66,13 @@ Basics Concept About ReactJs tutorial.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+#### Branch name - [routings](https://github.com/anmolsukki/reactjs_basics/tree/routings)
+###### Description 
+
+Basics Concept About react-router-dom.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 #### Developer Profile
 *   Name - Anmol Singh
 
