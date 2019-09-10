@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/Cockpit.css";
 
-const cockpit = (props) => {
+const Cockpit = (props) => {
+
+    // render for every changes
+    useEffect(() => {
+        console.log("[cockpit.js] useEffect")
+        // https request
+        setTimeout(() => {
+            alert("saved data to cloud")
+        }, 1000)
+    })
+
+    
+    // // render for only person changes
+    // useEffect(() => {
+    //     console.log("[cockpit.js] useEffect")
+    //     // https request
+    //     setTimeout(() => {
+    //         alert("saved data to cloud")
+    //     }, 1000)
+    // }, [props.person])
+
+
+    // // ren first time when component render
+    // useEffect(() => {
+    //     console.log("[cockpit.js] useEffect")
+    //     // https request
+    //     setTimeout(() => {
+    //         alert("saved data to cloud")
+    //     }, 1000)
+    // }, [])
 
     const classes = [];
     let buttonclass = "";
@@ -25,4 +54,4 @@ const cockpit = (props) => {
     );
 }
 
-export default cockpit;
+export default Cockpit;

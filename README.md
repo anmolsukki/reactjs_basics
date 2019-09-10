@@ -38,7 +38,7 @@
 
 <ul>
 <li>1_project_structure</li>
-<li>2_add_cockpit</li>
+<li>2_add_cockpit</li> description:- useEffect in Cockpit.js
 </ul>
 
 ----------------------------------------------------------------------------------------------------------------------------------------
