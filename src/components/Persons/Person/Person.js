@@ -2,49 +2,71 @@ import React from 'react';
 // import Aux from "../../../hoc/Aux"
 import classes from './Person.css';
 
-const person = props => {
-  console.log('[Person.js] rendering...');
-  return (
-    <div className={classes.Person}>
-      <p onClick={props.click}>
-        I'm {props.name} and I am {props.age} years old!
-      </p>
-      <p>{props.children}</p>
-      <input type="text" onChange={props.changed} value={props.name} />
-    </div>
-  );
+class Person extends React.Component {
+  // constructor (props) {
+  //   super (props)
+  //   this.inputElementRef = React.createRef();
+  // }
 
-  // ****************** OR ************************
+  componentDidMount = () => {
+    // For first element
+    // document.querySelector("input").focus()
 
-    // return [
-    //   <p key="1" onClick={props.click}>
-    //     I'm {props.name} and I am {props.age} years old!
-    //   </p>,
-    //   <p key="2">{props.children}</p>,
-    //   <input key="3" type="text" onChange={props.changed} value={props.name} />
-    // ];
+    this.inputElement.focus()
 
-  // ****************** OR ************************
-      // return (
-      //   <Aux>
-      //     <p onClick={props.click}>
-      //       I'm {props.name} and I am {props.age} years old!
-      //     </p>
-      //     <p>{props.children}</p>
-      //     <input type="text" onChange={props.changed} value={props.name} />
-      //   </Aux>
-      // );
-
-  // ****************** OR ************************
-      // return (
-      //   <React.Fragment>
-      //     <p onClick={props.click}>
-      //       I'm {props.name} and I am {props.age} years old!
-      //     </p>
-      //     <p>{props.children}</p>
-      //     <input type="text" onChange={props.changed} value={props.name} />
-      //   </React.Fragment>
-      // );
+    // For constructor method
+    // this.inputElementRef.current.focus()
+  }
+  render () {
+    console.log('[Person.js] rendering...');
+    return (
+      <div className={classes.Person}>
+        <p onClick={this.props.click}>
+          I'm {this.props.name} and I am {this.props.age} years old!
+        </p>
+        <p>{this.props.children}</p>
+        <input type="text"
+        ref={(inputEl) => {this.inputElement = inputEl}}
+        
+      // for constructor method
+        // ref={this.inputElementRef}
+        onChange={this.props.changed}
+        value={this.props.name} />
+      </div>
+    );
+  
+    // ****************** OR ************************
+  
+      // return [
+      //   <p key="1" onClick={this.props.click}>
+      //     I'm {this.props.name} and I am {this.props.age} years old!
+      //   </p>,
+      //   <p key="2">{this.props.children}</p>,
+      //   <input key="3" type="text" onChange={this.props.changed} value={this.props.name} />
+      // ];
+  
+    // ****************** OR ************************
+        // return (
+        //   <Aux>
+        //     <p onClick={this.props.click}>
+        //       I'm {this.props.name} and I am {this.props.age} years old!
+        //     </p>
+        //     <p>{this.props.children}</p>
+        //     <input type="text" onChange={this.props.changed} value={this.props.name} />
+        //   </Aux>
+        // );
+  
+    // ****************** OR ************************
+        // return (
+        //   <React.Fragment>
+        //     <p onClick={this.props.click}>
+        //       I'm {this.props.name} and I am {this.props.age} years old!
+        //     </p>
+        //     <p>{this.props.children}</p>
+        //     <input type="text" onChange={this.props.changed} value={this.props.name} />
+        //   </React.Fragment>
+        // );
+  }
 };
 
-export default person;
+export default Person;
